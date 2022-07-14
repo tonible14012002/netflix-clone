@@ -1,9 +1,5 @@
 
 
-.navbar {
-    width: 100%;
-    background-color: aqua;
-}
 
 @media only screen and (max-width: 767px){
     .header {
@@ -12,6 +8,10 @@
         padding: 0 5%;
         gap: 2em;
         height: 50px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+
     }
     .header_logo img {
         height: 1em;
@@ -26,6 +26,9 @@
         padding: 0 5%;
         gap: 2em;
         height: 70px;
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
     .header_logo img {
         height: 1.5em;
@@ -40,8 +43,6 @@
     font-size: 0.9em;
 }
 
-.header_menu {
-}
 
 .menu_option {
     cursor: pointer;
@@ -49,6 +50,15 @@
     transition: all 0.4s;
     font-weight: 300;
 }
+.menu_option.active {
+    color: #ffff;
+}
+.menu_option.active:hover {
+    cursor: default;
+    color: #ffff;
+}
+
+
 .menu_option:hover{
     color: #b5b5b5b5;
 }

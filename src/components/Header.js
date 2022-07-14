@@ -39,18 +39,12 @@ function HeaderMenu(){
                 return (
                     <li
                         key={index}
-                        className={styles.menu_option}
+                        className={`${styles.menu_option} ${(index==option)&&styles.active}`}
                         onClick={()=>{
                             if (index != option){
                                 setOption(index)
                             }
                         }}
-                        style={
-                            option==index ? {
-                                color:'#ffff',
-                                cursor: 'default'
-                            }:{}
-                        }
                     >
                        {op} 
                     </li>
